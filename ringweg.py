@@ -41,7 +41,7 @@ A1O = sens(A1w_sens)
 if van_wijkstraat > 20:
     display.scroll()
 else:
-    bord = Image("05050:05050:05050:99999:09990")
+    bord = Image("50005:05050:05050:99999:09990")
     display.show(bord)()
 
 
