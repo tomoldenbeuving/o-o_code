@@ -37,79 +37,23 @@ A28n = sens(A28n_sens)
 A1w = sens(A1w_sens)
 A1O = sens(A1w_sens)
 
-
-if van_wijkstraat > 20:
-    display.scroll()
-else:
-    bord = Image("50005:05050:05050:99999:09990")
-    display.show(bord)()
-
-
-if leusderweg > 20:
-    display.scroll()
-else:
-    bord = Image("05050:05050:05050:99999:09990")
-    display.show(bord)()
-
-
-if utrechtse_weg > 20:
-    display.scroll()
-else:
-    bord = Image("05050:05050:05050:99999:09990")
-    display.show(bord)()
-
-
-if vermeerstraat > 20:
-    display.scroll()
-else:
-    bord = Image("05050:05050:05050:99999:09990")
-    display.show(bord)()
-
-
-if arhnemseweg > 20:
-    bord = Image("05050:05050:05050:99999:09990")
-    display.show(bord)
-else:
-    display.scroll()
-
-
-if ringwegkruiskamp > 20:
-    bord = Image("05050:05050:05050:99999:09990")
-    display.show(bord)()
-else:
-    bord = Image("05050:05050:05050:99999:09990")
-    display.show(bord)()
-
-
-if ringwegranderbroek > 20:
-    display.scroll()
-else:
-    bord = Image("05050:05050:05050:99999:09990")
-    display.show(bord)()
-
-if A1O > 20:
-    display.scroll()
-else:
-    bord = Image("05050:05050:05050:99999:09990")
-    display.show(bord)()
-
 if A1w > 20:
-    display.scroll()
+    display.scroll("via Energieweg, Amersfoortse Straat)
+elif A1w > 5 : 
+   display.scroll("via Outputweg, Rondweg Ost, Bergpas") 
 else:
-    bord = Image("05050:05050:05050:99999:09990")
-    display.show(bord)()
+   display.scroll("via Hogweg, A28") 
 
 if A28n > 20:
-    display.scroll()
+    display.scroll("via Energieweg, Amersfoortsestraat, A1")
+elif A28n > 5 : 
+   display.scroll("via Hogeweg") 
 else:
-    bord = Image("05050:05050:05050:99999:09990")
-    display.show(bord)()
+   display.scroll("via Hogeweg") 
 
 if A28z > 20:
-    display.scroll()
+    display.scroll("via Leusderweg, Kersebaan of N227")
+elif A28z > 5 : 
+   display.scroll("via Leusderweg") 
 else:
-    bord = Image("05050:05050:05050:99999:09990")
-    display.show(bord)()
-
-
-
+   display.scroll("via Hogeweg") 
