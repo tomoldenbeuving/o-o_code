@@ -1,17 +1,18 @@
 from microbit import *
 import time
 
-vw_sens = sensorteller()
-ls_sens = display.read_light_level()
-ut_sens = display.read_light_level()
-vs_sens = display.read_light_level()
-aw_sens = display.read_light_level()
-rb_sens = display.read_light_level()
-rk_sens = display.read_light_level()
-A28z_sens = display.read_light_level()
-A28n_sens = display.read_light_level()
+# voor het voorbeeld zijn de volgende inputs uitgeschakeld
+#vw_sens = sensorteller()
+#ls_sens = display.read_light_level()
+#ut_sens = display.read_light_level()
+#vs_sens = display.read_light_level()
+#aw_sens = display.read_light_level()
+#rb_sens = display.read_light_level()
+#rk_sens = display.read_light_level()
+#A28z_sens = display.read_light_level()
+#A28n_sens = display.read_light_level()
 A1w_sens = display.read_light_level()
-A1O_sens = display.read_light_level()
+#A1O_sens = display.read_light_level()
 
 def sens(sensorlocal):
     while True:   
@@ -38,7 +39,7 @@ A1w = sens(A1w_sens)
 A1O = sens(A1w_sens)
 
 if A1w > 20:
-    display.scroll("via Energieweg, Amersfoortse Straat)
+    display.scroll("via Energieweg, Amersfoortse Straat")
 elif A1w > 5 : 
    display.scroll("via Outputweg, Rondweg Ost, Bergpas") 
 else:
